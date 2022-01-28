@@ -1,0 +1,10 @@
+const express=require('express')
+//const app=express()
+const todorouter=express.Router()
+console.log('kk')
+todorouter.use('/users',require('./users'))
+todorouter.use('/articles',require('./articles'))
+todorouter.use('/comments',require('./comments'))
+todorouter.use('/posts',require('./posts'))
+todorouter.use('/profiles',require('./profiles'))
+module.exports=todorouter
